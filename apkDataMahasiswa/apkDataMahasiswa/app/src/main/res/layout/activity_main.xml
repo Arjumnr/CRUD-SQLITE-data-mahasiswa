@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/data_mahasiswa"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/txtNis"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/judul"
+        android:layout_marginStart="50dp"
+        android:gravity="center"
+        android:text="@string/enter_nis"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/nis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginStart="28dp"
+        android:layout_below="@+id/judul"
+        android:layout_toEndOf="@+id/txtNis"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/txtNis"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/enter_nama"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toEndOf="@+id/txtNama"
+        android:layout_below="@+id/nis"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/txtTlp"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/txtNama"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/enter_telepon"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/tlp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_toEndOf="@+id/txtTlp"
+        android:layout_below="@+id/nama"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/entry"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txtTlp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:onClick="add"
+        android:text="@string/entry"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/modify"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/entry"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:onClick="update"
+        android:text="@string/modify" />
+
+    <Button
+        android:id="@+id/viewAll"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/modify"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:onClick="viewAll"
+        android:text="@string/view_all" />
+
+    <Button
+        android:id="@+id/hapus"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/tlp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/entry"
+        android:gravity="center"
+        android:onClick="delete"
+        android:text="@string/hapus" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/hapus"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/modify"
+        android:gravity="center"
+        android:onClick="view"
+        android:text="@string/view" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/view"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/viewAll"
+        android:gravity="center"
+        android:onClick="showInfo"
+        android:text="@string/about" />
+
+
+
+</RelativeLayout>

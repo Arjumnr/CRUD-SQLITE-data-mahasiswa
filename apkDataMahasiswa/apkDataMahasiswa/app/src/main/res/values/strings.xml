@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">apkDataMahasiswa</string>
+    <string name="data_mahasiswa">Data Mahasiswa</string>
+    <string name="enter_nis">    Enter Nis     :</string>
+    <string name="enter_nama">   Enter Nama    :</string>
+    <string name="enter_telepon">Enter Telepon :</string>
+    <string name="entry">Entry</string>
+    <string name="modify">Modify</string>
+    <string name="view_all">View All</string>
+    <string name="hapus">Hapus</string>
+    <string name="view">View</string>
+    <string name="about">About</string>
+</resources>
